@@ -20,8 +20,8 @@ before_install:
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-variation.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-funcgen.git
     - git clone --branch master --depth 1 https://github.com/Ensembl/ensembl-io.git
-    - wget https://github.com/bioperl/bioperl-live/archive/bioperl-release-1-2-3.zip
-    - unzip bioperl-release-1-2-3.zip
+    - wget http://bioperl.org/DIST/BioPerl-1.6.1.tar.gz
+    - mkdir bioperl-live && tar zxvf BioPerl-1.6.1.tar.gz -C bioperl-live --strip-components 1
     - git clone --branch master --depth 1 https://github.com/samtools/tabix.git
     - cd tabix
     - make
